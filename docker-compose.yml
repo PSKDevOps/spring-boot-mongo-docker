@@ -38,8 +38,12 @@ services:
     
 volumes:
   mongodb:
-    external: true
+   # external: true
+  data-bkp:
+  # external: true
     
 networks:
-  springappnetwork:
-    external: true
+  default:
+    external:
+      name: customoverlay
+    
